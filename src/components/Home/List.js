@@ -10,9 +10,9 @@ const List = () => {
     const url = "http://103.127.29.85:8085/plotlist/getListing";
     let authToken = localStorage.getItem("authToken");
     console.log(authToken);
-    await axios
+    return await axios
       .get(url, {
-        headers: { "Authorization": `Bearer ${authToken} ` },
+        headers: { Authorization: `Bearer ${authToken} ` },
       })
       .then((response) => {
         console.log(response);
@@ -20,8 +20,8 @@ const List = () => {
       .catch((error) => {
         console.log(error);
       });
-    const listData = res.data.listings;
-    setList(listData);
+    // const listData = res.data.listings;
+    // setList(listData);
   };
 
   // const dataFetch = () => {

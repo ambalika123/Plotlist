@@ -20,30 +20,33 @@ class PopularCategories extends Component {
     let category_name = category && category.categories;
     //console.log(category_name);
     return (
-      <div class="popular-categories">
-        <div class="container">
-          <div class="row">
-            <div class="col-lg-12">
-              <div class="section-heading">
+      <div className="popular-categories">
+        <div className="container">
+          <div className="row">
+            <div className="col-lg-12">
+              <div className="section-heading">
                 <h2>Popular Categories</h2>
                 <h6>Check Them Out</h6>
               </div>
             </div>
-            <div class="col-lg-12">
-              <div class="naccs">
-                <div class="grid">
-                  <div class="row">
-                    <div class="col-lg-3">
-                      <div class="menu">
+            <div className="col-lg-12">
+              <div className="naccs">
+                <div className="grid">
+                  <div className="row">
+                    <div className="col-lg-3">
+                      <div className="menu">
                         {" "}
                         {/* {category.categories &&
                           category.categories.map((cat) => ( */}
                         <>
-                          <div class="first-thumb active">
-                            <div class="thumb">
-                              <span class="icon">
+                          <div className="first-thumb active">
+                            <div className="thumb">
+                              <span className="icon">
                                 <img
-                                  src="assets/images/search-icon-01.png"
+                                  src={
+                                    category.categories &&
+                                    category.categories[0].icon
+                                  }
                                   alt=""
                                 />
                               </span>{" "}
@@ -52,10 +55,13 @@ class PopularCategories extends Component {
                             </div>
                           </div>
                           <div>
-                            <div class="thumb">
-                              <span class="icon">
+                            <div className="thumb">
+                              <span className="icon">
                                 <img
-                                  src="assets/images/search-icon-02.png"
+                                  src={
+                                    category.categories &&
+                                    category.categories[1].icon
+                                  }
                                   alt=""
                                 />
                               </span>{" "}
@@ -64,10 +70,13 @@ class PopularCategories extends Component {
                             </div>
                           </div>
                           <div>
-                            <div class="thumb">
-                              <span class="icon">
+                            <div className="thumb">
+                              <span className="icon">
                                 <img
-                                  src="assets/images/search-icon-03.png"
+                                  src={
+                                    category.categories &&
+                                    category.categories[2].icon
+                                  }
                                   alt=""
                                 />
                               </span>{" "}
@@ -76,10 +85,13 @@ class PopularCategories extends Component {
                             </div>
                           </div>
                           <div>
-                            <div class="thumb">
-                              <span class="icon">
+                            <div className="thumb">
+                              <span className="icon">
                                 <img
-                                  src="assets/images/search-icon-04.png"
+                                  src={
+                                    category.categories &&
+                                    category.categories[3].icon
+                                  }
                                   alt=""
                                 />
                               </span>{" "}
@@ -91,14 +103,14 @@ class PopularCategories extends Component {
                         {/* ))} */}
                       </div>
                     </div>
-                    <div class="col-lg-9 align-self-center">
-                      <ul class="nacc">
-                        <li class="active">
+                    <div className="col-lg-9 align-self-center">
+                      <ul className="nacc">
+                        <li className="active">
                           <div>
-                            <div class="thumb">
-                              <div class="row">
-                                <div class="col-lg-5 align-self-center">
-                                  <div class="left-text">
+                            <div className="thumb">
+                              <div className="row">
+                                <div className="col-lg-5 align-self-center">
+                                  <div className="left-text">
                                     <h4>
                                       {category.categories &&
                                         category.categories[0].title}
@@ -107,15 +119,16 @@ class PopularCategories extends Component {
                                       {category.categories &&
                                         category.categories[0].sort_descripiton}
                                     </p>
-                                    <div class="main-white-button">
+                                    <div className="main-white-button">
                                       <a href="#">
-                                        <i class="fa fa-eye"></i> Discover More
+                                        <i className="fa fa-eye"></i> Discover
+                                        More
                                       </a>
                                     </div>
                                   </div>
                                 </div>
-                                <div class="col-lg-7 align-self-center">
-                                  <div class="right-image">
+                                <div className="col-lg-7 align-self-center">
+                                  <div className="right-image">
                                     <img
                                       src={
                                         category.categories &&
@@ -131,10 +144,10 @@ class PopularCategories extends Component {
                         </li>
                         <li>
                           <div>
-                            <div class="thumb">
-                              <div class="row">
-                                <div class="col-lg-5 align-self-center">
-                                  <div class="left-text">
+                            <div className="thumb">
+                              <div className="row">
+                                <div className="col-lg-5 align-self-center">
+                                  <div className="left-text">
                                     <h4>
                                       {category.categories &&
                                         category.categories[1].title}
@@ -143,15 +156,16 @@ class PopularCategories extends Component {
                                       {category.categories &&
                                         category.categories[1].sort_descripiton}
                                     </p>
-                                    <div class="main-white-button">
+                                    <div className="main-white-button">
                                       <a href="#">
-                                        <i class="fa fa-eye"></i> Explore More
+                                        <i className="fa fa-eye"></i> Explore
+                                        More
                                       </a>
                                     </div>
                                   </div>
                                 </div>
-                                <div class="col-lg-7 align-self-center">
-                                  <div class="right-image">
+                                <div className="col-lg-7 align-self-center">
+                                  <div className="right-image">
                                     <img
                                       src={
                                         category.categories &&
@@ -166,10 +180,10 @@ class PopularCategories extends Component {
                         </li>
                         <li>
                           <div>
-                            <div class="thumb">
-                              <div class="row">
-                                <div class="col-lg-5 align-self-center">
-                                  <div class="left-text">
+                            <div className="thumb">
+                              <div className="row">
+                                <div className="col-lg-5 align-self-center">
+                                  <div className="left-text">
                                     <h4>
                                       {category.categories &&
                                         category.categories[2].title}
@@ -178,15 +192,16 @@ class PopularCategories extends Component {
                                       {category.categories &&
                                         category.categories[2].sort_descripiton}
                                     </p>
-                                    <div class="main-white-button">
+                                    <div className="main-white-button">
                                       <a href="listing.html">
-                                        <i class="fa fa-eye"></i> More Listing
+                                        <i className="fa fa-eye"></i> More
+                                        Listing
                                       </a>
                                     </div>
                                   </div>
                                 </div>
-                                <div class="col-lg-7 align-self-center">
-                                  <div class="right-image">
+                                <div className="col-lg-7 align-self-center">
+                                  <div className="right-image">
                                     <img
                                       src={
                                         category.categories &&
@@ -202,10 +217,10 @@ class PopularCategories extends Component {
                         </li>
                         <li>
                           <div>
-                            <div class="thumb">
-                              <div class="row">
-                                <div class="col-lg-5 align-self-center">
-                                  <div class="left-text">
+                            <div className="thumb">
+                              <div className="row">
+                                <div className="col-lg-5 align-self-center">
+                                  <div className="left-text">
                                     <h4>
                                       {category.categories &&
                                         category.categories[3].title}
@@ -214,15 +229,16 @@ class PopularCategories extends Component {
                                       {category.categories &&
                                         category.categories[3].sort_descripiton}
                                     </p>
-                                    <div class="main-white-button">
+                                    <div className="main-white-button">
                                       <a href="#">
-                                        <i class="fa fa-eye"></i> Discover More
+                                        <i className="fa fa-eye"></i> Discover \
+                                        More
                                       </a>
                                     </div>
                                   </div>
                                 </div>
-                                <div class="col-lg-7 align-self-center">
-                                  <div class="right-image">
+                                <div className="col-lg-7 align-self-center">
+                                  <div className="right-image">
                                     <img
                                       src={
                                         category.categories &&

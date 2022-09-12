@@ -1,9 +1,11 @@
 import React, { Component } from "react";
+import Header from "../Common/Header";
 class Contact extends Component {
   state = {};
   render() {
     return (
       <>
+        <Header />
         <div className="page-heading">
           <div className="container">
             <div className="row">
@@ -25,14 +27,14 @@ class Contact extends Component {
                 <div className="inner-content">
                   <div className="row">
                     <div className="col-lg-6">
-                      <div id="map">
+                      {/* <div id="map">
                         <iframe
                           src="https://maps.google.com/maps?q=Av.+L%C3%BAcio+Costa,+Rio+de+Janeiro+-+RJ,+Brazil&t=&z=13&ie=UTF8&iwloc=&output=embed"
                           width="100%"
                           height="650px"
                           allowFullScreen
                         ></iframe>
-                      </div>
+                      </div> */}
                     </div>
                     <div className="col-lg-6 align-self-center">
                       <form id="contact" action="" method="get">

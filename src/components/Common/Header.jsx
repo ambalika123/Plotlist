@@ -30,9 +30,9 @@ class Header extends Component {
                   <li>
                     <NavLink to="/contact">Contact Us</NavLink>
                   </li>
-                  <li>
+                  {/* <li>
                     <NavLink to="/login">Login</NavLink>
-                  </li>
+                  </li> */}
                   <li>
                     <NavLink to="/logout">Logout</NavLink>
                   </li>

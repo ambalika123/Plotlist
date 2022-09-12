@@ -24,10 +24,10 @@ function App() {
     // console.log(Time);
     // let currentTime = Math.floor(Date.now() / 1000);
     // console.log(currentTime);
-    console.log(exp);
+    // console.log(exp);
     const expirationTime = exp * 1000 - 60000;
-    console.log(expirationTime);
-    console.log(Date.now());
+    // console.log(expirationTime);
+    // console.log(Date.now());
     if (Date.now() >= expirationTime) {
       localStorage.clear();
       alert("You have been logged out");

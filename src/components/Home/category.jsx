@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { ProSidebar, Menu, MenuItem, SidebarContent } from "react-pro-sidebar";
-
+import axios from "axios";
 const CategoryLayout = ({ category, image, desc }) => {
   //create initial menuCollapse state using useState hook
   const [menuCollapse, setMenuCollapse] = useState(false);
