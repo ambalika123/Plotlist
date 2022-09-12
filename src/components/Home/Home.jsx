@@ -17,7 +17,7 @@ class Home extends Component {
         <Banner />
         <PopularCategories />
         {/* <Lists /> */}
-        <List />
+        {/* <List /> */}
         {/* <Slider />
         <Slider1 />
         <Slider2 /> */}
